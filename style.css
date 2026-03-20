@@ -345,57 +345,28 @@ button:hover {
   z-index: 10;
 }
 
-
-
 /* 🔥 MOBILE RESPONSIVE */
 @media (max-width: 600px) {
 
-  h1 {
-    font-size: 26px;
-  }
-
-  .container {
-    margin-top: 40px;
-    padding: 10px;
-  }
-
   .card {
-    width:100%;
-    padding: 25px;
-    font-size:20px;
-  }
-
-  #day {
-    font-size: 22px;
+    width: 95%;          /* 🔥 full width use */
+    max-width: 100%;     /* ❌ 350px hata diya */
+    box-sizing: border-box;
   }
 
   #wish {
-    font-size:20px;
-    white-space: normal;   
+    white-space: nowrap;  
+    text-align: center;
+
+    font-size: clamp(12px, 4.5vw, 18px);  /* 🔥 auto adjust */
   }
 
-  button {
-    width: 80%;
-    font-size: 20px;
-    padding: 15px;
-    margin: 6px 0;
-  }
-
-  .message-box {
-    width: 90%;
-    padding: 25px;
-  }
-
-  .message-box h2 {
-    font-size: 20px;
-  }
-
-  .message-box p {
-    font-size: 16px;
+  body {
+    overflow-x: hidden;
   }
 }
 
-/* 📱 MOBILE VIDEO SPACING */
+/* 📱 MOBILE VIDEO */
 @media (max-width: 600px) {
 
   .video-content {
