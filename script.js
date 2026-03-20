@@ -30,7 +30,14 @@ function nextDay() {
 
 // Open Video
 function openVideo() {
-  document.getElementById("videoModal").style.display = "flex";
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("popupVideo");
+
+  modal.style.display = "flex";
+
+  video.currentTime = 0;
+  video.load();
+  video.play().catch(() => {});
 }
 
 function closeVideo() {
