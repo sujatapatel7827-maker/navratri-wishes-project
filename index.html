@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navratri Wishes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Opening Message -->
+  <div class="overlay" id="overlay">
+    <div class="message-box">
+      <h2>📢 Announcement</h2>
+      <p>
+        May I have your attention please,<br>
+        aap sabhi ko hamari taraf se Navratri ki dher sari shubh kamanaye 🙏
+      </p>
+      <button onclick="startSite()">Enter ➡️</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>🌸 Happy Navratri 🌸</h1>
+
+    <div class="card">
+      <h2 id="day">Day 1</h2>
+      <p id="wish"><span class='maa'>मां शैलपुत्री </span>bless you 🙏</p>
+    </div>
+
+    <button onclick="nextDay()">Next Day ➡️</button>
+
+    <br><br>
+
+    <button class="video-btn" onclick="openVideo()">🎬 Watch Special Video</button>
+  </div>
+  <!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+  <div class="video-content">
+    <span class="close" onclick="closeVideo()">❌</span>
+    
+    <video id="popupVideo" controls>
+      <source src="Video.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
